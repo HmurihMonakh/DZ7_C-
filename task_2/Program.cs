@@ -12,10 +12,6 @@
 
 // 8 4 2 4
 
-// 17 -> такого числа в массиве нет
-// 4 -> такой элемент есть и его индекс 0, 1 (идеально было б найти все вхождения этого элемента)
-// 2, 3 -> такой элемент есть и равен 4
-// 5, 5 -> такой элемент отсутствует
 
 Console.WriteLine("введите номер строки");
 int NumberString = Convert.ToInt32(Console.ReadLine());
@@ -53,7 +49,7 @@ void PrintArray(int[,] array)
         Console.Write("[ ");
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(array[i,j] + " ");
+            Console.Write(array[i,j] + "   ");
         }   
         Console.Write("]");
         Console.WriteLine(""); 

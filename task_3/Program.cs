@@ -6,8 +6,6 @@
 5 9 2 3
 8 4 2 4
 Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
-
-доп задача к 7 семинару. Доделать Тетрис в консоли, плюс сделать функцию для генерации случайной фигуры.
 */
 
 Console.WriteLine("введите количество строк");
@@ -40,7 +38,7 @@ void FillArrayRandomNumbers(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(0, 10);
+            array[i, j] = new Random().Next(0, 100);
         }
     }
 }
@@ -53,7 +51,7 @@ void PrintArray(int[,] array)
         Console.Write("[ ");
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write(array[i, j] + " ");
+            Console.Write(array[i, j] + "   ");
         }
         Console.Write("]");
         Console.WriteLine("");
